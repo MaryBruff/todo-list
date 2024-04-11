@@ -1,0 +1,26 @@
+.completed {
+  text-decoration: line-through;
+}
+
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin-left: 0.5rem;
+}
