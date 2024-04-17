@@ -3,12 +3,8 @@ import './App.css';
 import TodoForm from './TodoForm/TodoForm';
 import TodoList from './TodoList/TodoList';
 import TodoItem from './TodoItem/TodoItem';
+import { Todo } from './types';
 
-interface Todo {
-id: number;
-text: string;
-completed: boolean;
-}
 
 function App() {
   //The angle brackets <> are used to specify the type of the state variable. In this case, the state variable is an array of Todo objects.
@@ -42,9 +38,9 @@ function App() {
     <div className="App">
       <h1>Todo List</h1>
       <TodoForm addTodo={addTodo} />
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </div>
   );
 }
-
 
 export default App;
