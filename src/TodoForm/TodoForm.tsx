@@ -1,12 +1,11 @@
-// TodoForm.tsx
-
 import React, { useState } from 'react';
 
 interface TodoFormProps {
   addTodo: (text: string) => void;
 }
+//Defines the shape of the props that the TodoForm component expects. The addTodo prop is a function that takes a string as an argument and returns void because it doesn't return anything.
 
-const TodoForm: React.FC<TodoFormProps> = ({ addTodo }) => {
+function TodoForm({ addTodo }: TodoFormProps) {
   const [inputText, setInputText] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -27,6 +26,6 @@ const TodoForm: React.FC<TodoFormProps> = ({ addTodo }) => {
       <button type="submit">Add Todo</button>
     </form>
   );
-};
+}
 
 export default TodoForm;
