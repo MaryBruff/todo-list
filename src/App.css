@@ -1,15 +1,22 @@
+body,
+html {
+  background-color: #f2d7ee;
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
 .completed {
   text-decoration: line-through;
 }
 
-/* App.css */
-
-.App {
-  text-align: center;
-}
-
 h1 {
   font-size: 2rem;
+  color: #b76e79;
 }
 
 ul {
@@ -22,5 +29,46 @@ li {
 }
 
 button {
-  margin-left: 0.5rem;
+  background-color: #ff91af;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f364a2;
+}
+
+input[type="text"] {
+  border: 2px solid #ff91af; 
+  padding: 10px;
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  accent-color: #b76e79;
+}
+
+.todo-item {
+  background: #fff0f6;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  padding: 0 10px;
 }
